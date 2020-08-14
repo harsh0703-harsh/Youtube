@@ -1,0 +1,37 @@
+First we need install Anaconda 
+The anaconda link is here : https://www.anaconda.com/products/individual
+
+
+First we have to create the environment (make sure it should be conda environment)
+   1.  conda create --name env python=3.7
+   2.  conda activate env
+
+Now then we have to install the important libraries for rasa 
+ we have to install visual studio build tools
+step 1 : conda install ujson==1.35
+Step 2 :conda install tensorflow
+Step 3 :pip install rasa
+
+Then we need c++ dependencies for that we have to install visual c++
+The link is: https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
+
+
+For the UI integration we need to install rasa x
+
+step 1 : activate your anaconda environment
+step 2 : pip install rasa-x --extra-index-url https://pypi.rasa.com/simple
+step 3 : pip install rasa[spacy]
+step 4 : python -m spacy download en_core_web_md
+Step 5 : python -m spacy link en_core_web_md en
+
+
+then for our first trial we can use the inbuilt chatbot present in rasa
+ 
+rasa init --no-prompt
+rasa x
+
+
+
+
+ 
+
