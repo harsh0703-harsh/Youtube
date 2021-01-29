@@ -4,9 +4,9 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase 
 from email import encoders
 
-from_address="harsh-cse19@satyug.edu.in"
-password="harsharoradaguku@12345"
-to_address="harsharora0703@gmail.com"
+from_address="Sender _username"
+password="Your email password"
+to_address="reciever password"
 
 
 #### Writing content of the mail
